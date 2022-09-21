@@ -2,19 +2,19 @@
 
 :root {
   --primary: #00b29d;
+  --border-color: rgb(209, 206, 206);
 }
 
 body {
   background: #f2f2f2;
   font-family: "Poppins";
 }
-*{
-  box-sizing: border-box;
-}
+
 .tabs {
   max-width: 600px;
   margin: 200px auto;
-  border:1px solid gray
+  border:1px solid var(--border-color);
+  background: #fff;
 
 }
 
@@ -23,7 +23,7 @@ body {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
 
-  border-bottom: 1px solid gray;
+  border-bottom: 1px solid var(--border-color);
 
 }
 
@@ -36,10 +36,10 @@ a {
   
 }
 .buttons a:first-child{
-  border-right: 1px solid gray;
+  border-right: 1px solid var(--border-color);
 }
 .buttons a:last-child{
-  border-left: 1px solid gray;
+  border-left: 1px solid var(--border-color);
 }
 
 /* panels */
